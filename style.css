@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+*/
+.wrap {
+  background-color: #f2f1ec;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/*nav*/
+
+nav {
+  position: sticky;
+  z-index: 2;
+  top: 10px;
+  background-color: #c9c2bc8d;
+
+  width: 100%;
+  line-height: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav_logo .nav_logo-tab-one {
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: flex;
+  text-align: left;
+}
+
+.nav_projects-tab:nth-last-child(2) {
+  border-right: 1px solid black;
+  padding-left: 0;
+}
+
+/*nav end*/
+
+button {
+  background-color: rgb(164, 156, 147, 0.4);
+  padding: 10px 20px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+.description-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.description-subtitle {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.description-txt {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/*home*/
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home__half {
+  height: 70vh;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__half-foto img {
+  width: 100%;
+}
+
+.home__half-description {
+  background-color: rgba(255, 255, 255, 0.835);
+  width: 100%;
+
+  padding: 30px;
+  /* bottom: -50px; */
+}
+.icons {
+  margin: 15px 0px 0 0;
+  font-size: 30px;
+}
+.icons i {
+  margin: 0 10px 0 0;
+}
+
+.fa-arrow-down {
+  font-size: 20px;
+}
+.arrow {
+  position: relative;
+  bottom: 50px;
+
+  width: 100%;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.projects-all {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.projects-all a {
+  display: block;
+  height: 50%;
+  margin: 10px;
+}
+.projects-all a img {
+  height: 100%;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.projects-all img:hover {
+  transform: scale(1.2);
+}
+.project-all-tekst {
+  background-color: rgba(255, 255, 255, 0.835);
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.projects_description {
+  background-color: rgba(255, 255, 255, 0.835);
+
+  width: 40%;
+
+  padding: 30px;
+}
+
+.projects-foto {
+  width: 60%;
+  display: flex;
+  height: 90vh;
+
+  padding: 20px;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.projects-foto img {
+  height: 85%;
+  transform: scale(1);
+  transition: 0.3s;
+  margin: 0 10px;
+}
+.projects-foto img:hover {
+  height: 85%;
+  transform: scale(1.2);
+}
+
+.strony {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+.strony-txt {
+  width: 30%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.835);
+
+  padding: 30px;
+}
+.strony-foto {
+  width: 70%;
+  height: 900px;
+
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.autorzy {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transition: 0.8s;
+  transform: scale(0.7);
+}
+.margota {
+  height: 100%;
+  position: absolute;
+  left: 300px;
+  transition: 0.8s;
+  transform: scale(0.8);
+}
+.spoko {
+  height: 100%;
+  position: absolute;
+  left: 500px;
+  transition: 0.8s;
+  transform: scale(0.7);
+}
+.spoko:hover,
+.margota:hover,
+.autorzy:hover {
+  transform: scale(0.9);
+  z-index: 1000;
+}
+
+.strony-new {
+  display: none;
+  width: 30%;
+
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.835);
+
+  padding: 30px;
+}
+
+.logo {
+  margin-bottom: 15px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.active {
+  display: flex;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_name {
+  margin-right: 50px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.contact_dane {
+  line-height: 30px;
+  font-size: 18px;
+}
