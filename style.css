@@ -6,13 +6,6 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
-/*
-font-family: 'Barlow', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Oswald', sans-serif;
-
-*/
 .wrap {
   background-color: #f2f1ec;
   max-width: 1440px;
@@ -27,7 +20,6 @@ nav {
   z-index: 2;
   top: 10px;
   background-color: #c9c2bc8d;
-
   width: 100%;
   line-height: 30px;
   padding: 10px;
@@ -141,11 +133,9 @@ section {
   font-size: 20px;
 }
 .arrow {
-  position: relative;
-  bottom: 50px;
-
   width: 100%;
   text-align: center;
+  justify-content: center;
 }
 
 .projects {
@@ -212,82 +202,6 @@ section {
   transform: scale(1.2);
 }
 
-.strony {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-}
-.strony-txt {
-  width: 30%;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-
-  background-color: rgba(255, 255, 255, 0.835);
-
-  padding: 30px;
-}
-.strony-foto {
-  width: 70%;
-  height: 900px;
-
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  position: relative;
-}
-
-.autorzy {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  transition: 0.8s;
-  transform: scale(0.7);
-}
-.margota {
-  height: 100%;
-  position: absolute;
-  left: 300px;
-  transition: 0.8s;
-  transform: scale(0.8);
-}
-.spoko {
-  height: 100%;
-  position: absolute;
-  left: 500px;
-  transition: 0.8s;
-  transform: scale(0.7);
-}
-.spoko:hover,
-.margota:hover,
-.autorzy:hover {
-  transform: scale(0.9);
-  z-index: 1000;
-}
-
-.strony-new {
-  display: none;
-  width: 30%;
-
-  flex-direction: column;
-  justify-content: center;
-
-  background-color: rgba(255, 255, 255, 0.835);
-
-  padding: 30px;
-}
-
-.logo {
-  margin-bottom: 15px;
-  width: 50%;
-  margin: 10px auto;
-}
-
-.active {
-  display: flex;
-}
 .contact {
   display: flex;
   justify-content: center;
