@@ -239,10 +239,21 @@ section {
 
   justify-content: space-around;
 }
+.view_www {
+  height: 70%;
+  display: flex;
+
+  padding: 20px;
+}
+.view_www .second {
+  margin-right: 20px;
+}
+
 .view img {
   transform: scale(1);
   transition: 0.3s;
 }
+
 .view img:hover {
   transform: scale(1.2);
 }
